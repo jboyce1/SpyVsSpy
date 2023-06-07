@@ -1,0 +1,27 @@
+console.log('%cstudent162@admin162:~/missions/silk road$ cat silk road.txt', 'color: white; font-family: Consolas; background-color: black');
+console.log('%cMission: Utilize https://netsim.erinn.io/ to enhance understanding of network communication.', 'color: white; font-family: Consolas; background-color: black');
+console.log('%cInstructions:', 'color: white; font-family: Consolas; background-color: black');
+console.log('%c   Open FireFox', 'color: white; font-family: Consolas; background-color: black');
+console.log('%c   Navigate to netsim at: https://netsim.erinn.io/', 'color: white; font-family: Consolas; background-color: black');
+console.log('%c   Log in with the given username & password', 'color: white; font-family: Consolas; background-color: black');
+console.log('%c   Complete the first 5 \'Levels\' and submit a screen capture (assigned in Teams)', 'color: white; font-family: Consolas; background-color: black');
+console.log('%cLevel 1: Getting Started', 'color: white; font-family: Consolas; background-color: black');
+console.log('%cLevel 2: Packet Fields', 'color: white; font-family: Consolas; background-color: black');
+console.log('%cLevel 3: Ping', 'color: white; font-family: Consolas; background-color: black');
+console.log('%cLevel 4: Routing', 'color: white; font-family: Consolas; background-color: black');
+console.log('%cLevel 5: Modems', 'color: white; font-family: Consolas; background-color: black');
+console.log('%c   Points:', 'color: white; font-family: Consolas; background-color: black');
+console.log('%c   5 points possible for completion', 'color: white; font-family: Consolas; background-color: black');
+console.log('%c  +2 points for being the first done out of the group', 'color: white; font-family: Consolas; background-color: black');
+console.log('%c  +2 points for being a part of the winning team', 'color: white; font-family: Consolas; background-color: black');
+console.log('%c  +1 point for participating in the discussion', 'color: white; font-family: Consolas; background-color: black');
+console.log('%cTerms and Ideas OSI (Open Systems Interconnection)', 'color: white; font-family: Consolas; background-color: black');
+console.log('%cknowt.io flashcards here', 'color: white; font-family: Consolas; background-color: black');
+console.log('%cLayers:', 'color: white; font-family: Consolas; background-color: black');
+console.log('%c   1: Physical Layer', 'color: white; font-family: Consolas; background-color: black');
+console.log('%c     Binary', 'color: white; font-family: Consolas; background-color: black');
+console.log('%c   2: Data Link Layer', 'color: white; font-family: Consolas; background-color: black');
+console.log('%c     MAC Address', 'color: white; font-family: Consolas; background-color: black');
+console.log('%c     Header', 'color: white; font-family: Consolas; background-color: black');
+console.log('%c     FCS Footer', 'color: white; font-family: Consolas; background-color: black');
+console.log('%c   
