@@ -5,8 +5,8 @@
 body {
     font-family: Consolas, "Courier New", monospace;
 
-    /* light smoke grey background */
-    background-color: #dcdcdc;
+    /* true page background */
+    background-color: #e6e6e6;  /* light grey */
 
     color: #111;
     margin: 0;
@@ -26,7 +26,6 @@ nav {
     height: 100vh;
 
     background-color: #c20d0d; /* dynamite red */
-    color: #000;
 
     padding: 20px 10px;
     overflow-y: auto;
@@ -34,23 +33,25 @@ nav {
     border-left: 6px solid #000;
 }
 
-/* Header inside navigation */
+/* header */
+
 nav h1 {
     font-size: 1.5em;
     margin-bottom: 20px;
-    color: #000;
 }
 
-/* Navigation links */
+/* nav links */
+
 nav a {
-    color: #000;
+    color: #ffd21f; /* default yellow */
     text-decoration: none;
     display: block;
     margin-bottom: 10px;
+    font-weight: bold;
 }
 
 nav a:hover {
-    color: #ffd21f;
+    color: #000; /* invert on hover */
 }
 
 /* ================================
@@ -64,8 +65,7 @@ nav a:hover {
 
     position: relative;
 
-    /* yellow comic panel */
-    background-color: #fff4a3;
+    background-color: #fff4a3; /* yellow section */
 
     z-index: 100;
 
@@ -80,7 +80,7 @@ nav a:hover {
 }
 
 /* ================================
-   LEFT NAV / TABLE OF CONTENTS
+   LEFT NAV
    ================================ */
 
 #left-nav {
@@ -93,8 +93,6 @@ nav a:hover {
     height: 100vh;
 
     background: #c20d0d;
-
-    color: #000;
 
     padding: 15px;
 
@@ -110,12 +108,13 @@ nav a:hover {
 }
 
 #left-nav a {
-    color: #000;
+    color: #ffd21f;
     text-decoration: none;
+    font-weight: bold;
 }
 
 #left-nav a:hover {
-    color: #ffd21f;
+    color: #000;
 }
 
 #toc a.active {
@@ -179,12 +178,12 @@ a:hover {
 }
 
 /* ================================
-   SCROLL BOX (MISSION TEXT)
+   SCROLL BOX
    ================================ */
 
 .scroll-box {
 
-    background-color: #fff4a3;
+    background-color: #fff4a3; /* muted yellow */
 
     color: #111;
 
