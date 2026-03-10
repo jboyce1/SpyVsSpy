@@ -1,8 +1,11 @@
-/* General Styling */
+/* ================================
+   SPY vs SPY THEME
+   ================================ */
+
 body {
-    font-family: 'Courier New', Courier, monospace;
-    background-color: #333; /* Dark background */
-    color: #fff; /* White text */
+    font-family: Consolas, "Courier New", monospace;
+    background-color: #ffd21f; /* explosion yellow */
+    color: #111;
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -13,65 +16,99 @@ nav {
     position: fixed;
     right: 0;
     top: 0;
-    width: 200px;
+    width: 210px;
     height: 100vh;
-    background-color: #111; /* Dark background for nav */
-    color: #fff;
+    background-color: #0b0b0b; /* bomb black */
+    color: #f5f5f5;
     padding: 20px 10px;
-    overflow-y: auto; /* Allows scrolling within the navigation bar if needed */
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    overflow-y: auto;
+    border-left: 6px solid #c20d0d; /* dynamite red */
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.6);
 }
 
 /* Header inside the navigation bar */
 nav h1 {
     font-size: 1.5em;
     margin-bottom: 20px;
+    color: #ffd21f; /* yellow */
 }
 
 /* Styling links in navigation */
 nav a {
-    color: #9bf; /* Light blue links */
+    color: #f5f5f5;
     text-decoration: none;
     display: block;
     margin-bottom: 10px;
 }
 
 nav a:hover {
-    color: #ddf;
+    color: #ffd21f;
 }
 
 /* Main Content */
 .main-content {
-    margin-left: 270px; /* Push content to avoid left nav overlap */
-    margin-right: 220px; /* Account for right nav */
+    margin-left: 260px;
+    margin-right: 230px;
     position: relative;
-    background-color: #222; /* Match page background */
+    background-color: #ffffff; /* paper white */
     z-index: 100;
-    padding: 20px;
-    max-width: calc(100% - 490px); /* Adjust width dynamically */
+    padding: 30px;
+    max-width: calc(100% - 490px);
     min-height: 100vh;
-    border: 10px solid #444;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 8px solid #0b0b0b;
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.4);
 }
 
-/* Ensure the left nav stays below the main content */
+/* Left nav / TOC */
 #left-nav {
     position: fixed;
     left: 0;
     top: 0;
-    width: 250px;
+    width: 240px;
     height: 100vh;
-    background: #111;
-    color: white;
+    background: #c20d0d; /* dynamite red */
+    color: #ffffff;
     padding: 15px;
     overflow-y: auto;
-    border-right: 10px solid #444;
-    z-index: 50; /* Behind main content */
+    border-right: 6px solid #0b0b0b;
+    z-index: 50;
+}
+
+#left-nav h2 {
+    color: #ffd21f;
+}
+
+#left-nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#left-nav a:hover {
+    color: #ffd21f;
+}
+
+#toc a.active {
+    color: #ffd21f;
+    font-weight: bold;
 }
 
 /* Improve readability of text */
-p, li, h1, h2, h3, h4, h5, h6 {
-    color: #ddd; /* Light grey for better readability */
+p, li {
+    color: #111;
+}
+
+h1 {
+    color: #c20d0d;
+    border-bottom: 3px solid #0b0b0b;
+    padding-bottom: 4px;
+}
+
+h2 {
+    color: #111;
+}
+
+h3, h4, h5, h6 {
+    color: #444;
 }
 
 /* Walkthrough Section */
@@ -91,52 +128,63 @@ p, li, h1, h2, h3, h4, h5, h6 {
     width: 100%;
     height: auto;
 }
+
 /* Global hyperlink color settings */
-a, a:visited, a:hover, a:active {
-    color: #9bf; /* Light blue for all links */
-    text-decoration: none; /* Removes underline */
+a, a:visited, a:active {
+    color: #c20d0d;
+    text-decoration: none;
 }
 
-/* Make hover effect slightly brighter */
 a:hover {
-    color: #ddf; /* Lighter blue on hover */
+    color: #ff6600;
 }
-        /* ===== Scrollable Code Block Styling ===== */
-    .scroll-box {
-        background-color: #1e1e1e; /* Dark background for contrast */
-        color: #9bf; /* Light blue text */
-        padding: 10px;
-        margin: 10px 0;
-        border: 1px solid #444;
-        border-radius: 5px;
-        font-family: 'Courier New', Courier, monospace;
-        font-size: 14px;
-        overflow-x: auto; /* Enables horizontal scrolling */
-        max-width: 100%; /* Prevents bleeding */
-        white-space: pre-wrap; /* Wraps lines properly */
-        word-wrap: break-word; /* Breaks long words to prevent overflow */
-        display: block;
-    }
-    
-    .terminal {
-        background-color: #0c0c0c;              /* True terminal black */
-        color: #d4d4d4;                         /* Neutral terminal text */
-        padding: 10px;
-        margin: 10px 0;
-        border-radius: 5px;
-        border: 1px solid #333;
-        font-family: Consolas, "Courier New", monospace;
-        font-size: 14px;
-        line-height: 1.4;
-        overflow-x: auto;
-        max-width: 100%;
-        white-space: pre-wrap;
-        word-break: break-word;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-    }
+
+/* ===== Scrollable Code / Briefing Box Styling ===== */
+.scroll-box {
+    background-color: #fff4a3; /* pale paper/explosion yellow */
+    color: #111;
+    padding: 12px;
+    margin: 12px 0;
+    border: 3px solid #0b0b0b;
+    border-radius: 4px;
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 14px;
+    overflow-x: auto;
+    max-width: 100%;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    display: block;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+.terminal {
+    background-color: #0b0b0b;
+    color: #00ff9c; /* terminal green */
+    padding: 12px;
+    margin: 12px 0;
+    border-radius: 4px;
+    border: 3px solid #444;
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 14px;
+    line-height: 1.4;
+    overflow-x: auto;
+    max-width: 100%;
+    white-space: pre-wrap;
+    word-break: break-word;
+    box-shadow: inset 0 0 12px rgba(0,0,0,0.8), 0 4px 12px rgba(0,0,0,0.35);
+}
+
+/* Lists inside briefing/terminal boxes */
+.scroll-box ul,
+.scroll-box ol,
+.terminal ul,
+.terminal ol {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
 /* Mobile Styles */
 @media screen and (max-width: 768px) {
-    /* Hide left-side TOC navigation */
     #left-nav {
         display: none !important;
         visibility: hidden;
@@ -144,15 +192,14 @@ a:hover {
         left: -9999px;
     }
 
-    /* Make main content full width */
     .main-content {
-        margin: 0 auto; /* Center content */
-        width: 90%; /* Provide some margin on small screens */
+        margin: 0 auto;
+        width: 90%;
         max-width: 100%;
         padding: 15px;
+        border-width: 5px;
     }
 
-    /* Adjust right navigation */
     nav {
         width: 100%;
         height: auto;
@@ -162,18 +209,19 @@ a:hover {
         justify-content: center;
         align-items: center;
         padding: 10px;
-        background: #222;
+        background: #0b0b0b;
+        border-left: none;
+        border-bottom: 4px solid #c20d0d;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-        overflow: hidden; /* Prevents excessive space usage */
+        overflow: hidden;
     }
 
-    /* Stack navigation links horizontally */
     nav a {
         display: inline-block;
         padding: 6px 8px;
         font-size: 13px;
         margin: 4px;
         text-align: center;
-        white-space: nowrap; /* Prevents wrapping */
+        white-space: nowrap;
     }
 }
