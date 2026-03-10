@@ -1,0 +1,137 @@
+Partial Mesh Network
+│
+├── Internet Gateway
+│   Device: Netgear CM1000 DOCSIS 3.1 Cable Modem
+│   Firmware: V6.01.02
+│   Management IP: 192.168.100.1
+│
+│   Configuration
+│       Bridge Mode: Disabled
+│       ISP Remote Diagnostics: Enabled
+│       ICMP Response: Enabled
+│
+├── Edge Firewall
+│   Device: Fortinet FortiGate 60E
+│   Firmware: FortiOS 6.2
+│   WAN Interface: ISP Modem
+│   LAN Interface: 172.16.10.1 /24
+│
+│   Firewall Policies
+│       Allow outbound ANY
+│       Allow inbound HTTPS to internal web server
+│       Allow inbound VPN
+│
+│   Administrative Access
+│       Web Management Enabled
+│       SSH Management Enabled
+│
+│
+├── Distribution Switch
+│   Device: HP Aruba 2530-48G
+│   Firmware: YA.16.03
+│   Management IP: 172.16.10.2
+│
+│   Configuration
+│       VLANs Configured
+│           VLAN 10 → Staff
+│           VLAN 20 → Students
+│           VLAN 30 → Servers
+│
+│       Trunk Links
+│           Router uplink
+│
+│       Monitoring
+│           NetFlow Export Enabled
+│
+│
+│   ├── Wireless Controller
+│   │   Device: Cisco 3504 Wireless Controller
+│   │   Firmware: 8.5
+│   │   IP: 172.16.10.3
+│   │
+│   │   Managed Devices
+│   │       3 Wireless Access Points
+│   │
+│   │   Wireless Networks
+│   │       School-Staff
+│   │       School-Student
+│   │
+│
+│   ├── Internal Web Server
+│   │   Device: Dell PowerEdge R220
+│   │   OS: Ubuntu Server 20.04
+│   │   IP: 172.16.10.10
+│   │
+│   │   Services
+│   │       Apache Web Server
+│   │       Internal Staff Portal
+│   │
+│
+│   ├── Database Server
+│   │   Device: Dell PowerEdge R430
+│   │   OS: Ubuntu Server 18.04
+│   │   IP: 172.16.10.11
+│   │
+│   │   Services
+│   │       MySQL Database
+│   │       Student Information System
+│   │
+│
+│   ├── Virtualization Host
+│   │   Device: Dell PowerEdge R730
+│   │   Hypervisor: VMware ESXi 6.5
+│   │   IP: 172.16.10.12
+│   │
+│   │   Virtual Machines
+│   │       Staff Application Server
+│   │       Internal Wiki
+│   │
+│
+│   ├── Backup Server
+│   │   Device: QNAP TS-453D NAS
+│   │   Firmware: QTS 4.4
+│   │   IP: 172.16.10.15
+│   │
+│   │   Backup Jobs
+│   │       File Server
+│   │       Database Server
+│   │
+│
+│   ├── Staff Desktop
+│   │   Device: Lenovo ThinkCentre M720
+│   │   OS: Windows 11 Pro
+│   │   IP: DHCP
+│   │
+│   │   Installed Software
+│   │       Office Suite
+│   │       VPN Client
+│   │
+│
+│   ├── Student Computer Lab
+│   │   Device: Dell OptiPlex 5040
+│   │   OS: Windows 10 Education
+│   │   IP: DHCP
+│   │
+│   │   Lab Software
+│   │       Programming Tools
+│   │       Browser
+│   │
+│
+│   ├── Multi-Function Printer
+│   │   Device: Brother MFC-L8900CDW
+│   │   IP: 172.16.10.40
+│   │
+│   │   Services
+│   │       Print
+│   │       Scan to Email
+│   │       Web Management
+│   │
+│
+│   └── Door Access Control System
+│       Device: HID VertX Controller
+│       Firmware: 2.7
+│       IP: 172.16.10.50
+│
+│       Services
+│           Web Administration
+│           Badge Authentication

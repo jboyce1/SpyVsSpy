@@ -1,0 +1,187 @@
+Full Mesh Network (Inherited Infrastructure)
+│
+├── Internet Gateway
+│   Device: ARRIS SBG7600AC2 Cable Modem
+│   Firmware: 1.0.4
+│   Public IP: ISP Assigned
+│   Management IP: 192.168.0.1
+│   Remote Management: Enabled
+│   ICMP Ping from WAN: Enabled
+│   UPnP: Enabled
+│   Admin Username: admin
+│   Admin Password: password
+│
+├── Mesh Portal Router
+│   Device: Cisco RV340 Dual WAN Router
+│   Firmware: 1.0.03.20
+│   WAN: Connected to ISP Gateway
+│   LAN: 10.10.1.1 /24
+│
+│   Firewall Rules
+│       Allow ICMP from WAN
+│       Allow TCP 3389 → 10.10.1.40 (Admin PC)
+│       Allow TCP 22 → 10.10.1.20 (File Server)
+│       Allow VPN (PPTP)
+│
+│   Routing Table
+│       10.10.1.0/24 → LAN
+│       0.0.0.0 → ISP Gateway
+│
+│   Admin Account
+│       Username: admin
+│       Password: School123
+│
+├── Core Network Switch
+│   Device: Cisco Catalyst 2960X
+│   Firmware: 15.2(2)E7
+│   Management IP: 10.10.1.2
+│
+│   Switch Configuration
+│       VLANs: Default (VLAN 1 only)
+│       Telnet: Enabled
+│       SSH: Disabled
+│       SNMP Version: v2
+│       SNMP Community: public
+│       Port Security: Disabled
+│       Unused Ports: Active
+│
+│   Mesh Links
+│       Connected Nodes: 10
+│
+│   ├── Wireless Access Point
+│   │   Device: Ubiquiti UniFi UAP-AC-PRO
+│   │   Firmware: 4.3.21
+│   │   IP: 10.10.1.3
+│   │
+│   │   Wireless Settings
+│   │       SSID: Generic-WiFi
+│   │       Encryption: WPA2
+│   │       Password: g3nericwifi123
+│   │       Guest Network: Disabled
+│   │       WPS: Enabled
+│   │
+│   │   Connected Clients
+│   │       Student Laptop
+│   │       Teacher Tablet
+│   │
+│   ├── File Server
+│   │   Device: Dell PowerEdge T340
+│   │   OS: Windows Server 2016
+│   │   IP: 10.10.1.20
+│   │
+│   │   Services
+│   │       SMB
+│   │       RDP
+│   │       File Sharing
+│   │
+│   │   Shared Resources
+│   │       \\fileserver01\staff
+│   │       \\fileserver01\public
+│   │
+│   │   Backup Policy
+│   │       Weekly
+│   │
+│   │   Password Policy
+│   │       Minimum Length: 6
+│   │       Expiration: Disabled
+│   │
+│   ├── Backup NAS
+│   │   Device: Synology DS218+
+│   │   Firmware: DSM 6.2
+│   │   IP: 10.10.1.25
+│   │
+│   │   Services
+│   │       SMB
+│   │       FTP
+│   │       Web Management
+│   │
+│   │   Admin Account
+│   │       Username: admin
+│   │       Password: backup
+│   │
+│   │   Backup Sources
+│   │       File Server
+│   │
+│   ├── Domain Controller
+│   │   Device: Dell PowerEdge R240
+│   │   OS: Windows Server 2012 R2
+│   │   IP: 10.10.1.15
+│   │
+│   │   Services
+│   │       Active Directory
+│   │       DNS
+│   │       DHCP
+│   │
+│   │   Domain
+│   │       school.local
+│   │
+│   │   Password Policy
+│   │       Minimum Length: 7
+│   │       Complexity: Disabled
+│   │
+│   ├── Staff Workstation
+│   │   Device: Dell OptiPlex 7070
+│   │   OS: Windows 10 Pro
+│   │   IP: 10.10.1.40
+│   │
+│   │   Remote Desktop: Enabled
+│   │
+│   │   Local Admin Account
+│   │       Username: admin
+│   │       Password: teacher
+│   │
+│   │   Updates
+│   │       Disabled
+│   │
+│   ├── Student Lab Workstation
+│   │   Device: HP EliteDesk 800
+│   │   OS: Windows 10 Education
+│   │   IP: DHCP
+│   │
+│   │   Software
+│   │       Web Browser
+│   │       Office Suite
+│   │
+│   │   Local Accounts
+│   │       student
+│   │       labadmin
+│   │
+│   ├── Network Printer
+│   │   Device: HP LaserJet Pro M404dn
+│   │   Firmware: 2020
+│   │   IP: 10.10.1.45
+│   │
+│   │   Admin Credentials
+│   │       admin / admin
+│   │
+│   │   Services
+│   │       HTTP
+│   │       FTP
+│   │       SNMP
+│   │
+│   ├── Security Camera Controller
+│   │   Device: Hikvision NVR
+│   │   Firmware: 3.4
+│   │   IP: 10.10.1.60
+│   │
+│   │   Services
+│   │       Web Management
+│   │       RTSP Video Streams
+│   │
+│   │   Admin Account
+│   │       admin / 12345
+│   │
+│   └── Monitoring Server
+│       Device: Dell PowerEdge R230
+│       OS: Ubuntu Server 18.04
+│       IP: 10.10.1.70
+│
+│       Monitoring Tools
+│           Nagios
+│           Syslog
+│
+│       SSH Access
+│           Password Authentication Enabled
+│
+│       Admin Account
+│           netadmin / netadmin

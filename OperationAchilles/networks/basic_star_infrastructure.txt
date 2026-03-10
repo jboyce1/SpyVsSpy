@@ -1,0 +1,96 @@
+Basic Star Network
+│
+├── Internet
+│   Upstream: ISP
+│
+├── ISP Gateway / Modem
+│   Device: Hitron CODA-4582
+│   Firmware: 7.2.4.5
+│   WAN: ISP Connection
+│   Management IP: 192.168.0.1
+│
+│   Configuration
+│       Gateway Mode: Enabled
+│       Remote Diagnostics: Enabled
+│       IPv6: Enabled
+│       ICMP Response: Enabled
+│
+├── Central Router / Switch
+│   Device: Cisco Small Business RV260P
+│   Firmware: 1.0.01.07
+│   LAN IP: 192.168.10.1 /24
+│
+│   Configuration
+│       DHCP Scope: 192.168.10.100 - 192.168.10.199
+│       Web Management: Enabled
+│       VPN Service: Enabled
+│       Port Forwarding Rules Present
+│       UPnP: Enabled
+│
+│   Connected Endpoints
+│       5
+│
+│   ├── Front Desk Workstation
+│   │   Device: Lenovo ThinkCentre M910
+│   │   OS: Windows 10 Pro
+│   │   IP: DHCP Reservation
+│   │
+│   │   Software
+│   │       Email Client
+│   │       Office Suite
+│   │       PDF Tools
+│   │
+│   │   Notes
+│   │       Shared by multiple staff members
+│   │
+│   ├── Office Manager Workstation
+│   │   Device: Dell OptiPlex 7050
+│   │   OS: Windows 11 Pro
+│   │   IP: DHCP
+│   │
+│   │   Software
+│   │       Accounting Software
+│   │       Browser
+│   │       Remote Support Client
+│   │
+│   │   Notes
+│   │       Used for payroll and purchasing
+│   │
+│   ├── File / Print Server
+│   │   Device: HP ProLiant MicroServer Gen10
+│   │   OS: Windows Server 2019
+│   │   IP: 192.168.10.20
+│   │
+│   │   Services
+│   │       SMB File Sharing
+│   │       Print Services
+│   │       Remote Desktop
+│   │
+│   │   Storage
+│   │       Shared Department Folder
+│   │       Shared Scan Archive
+│   │
+│   ├── Network Printer / Scanner
+│   │   Device: Xerox VersaLink C405
+│   │   IP: 192.168.10.30
+│   │
+│   │   Services
+│   │       Web Management
+│   │       Scan to Folder
+│   │       Email Notifications
+│   │
+│   │   Notes
+│   │       Stores recent scan jobs temporarily
+│   │
+│   └── Security / Utility Host
+│       Device: Intel NUC
+│       OS: Ubuntu Server 22.04
+│       IP: 192.168.10.40
+│
+│       Services
+│           Local Backup Sync
+│           Syslog Collection
+│           SSH
+│
+│       Notes
+│           Added after original deployment

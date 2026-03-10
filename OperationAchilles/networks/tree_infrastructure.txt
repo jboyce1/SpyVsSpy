@@ -1,0 +1,148 @@
+Small Organization Tree Network
+│
+├── Core Network Router
+│   Device: Juniper SRX300
+│   Firmware: JunOS 18.4
+│   LAN Backbone: 10.0.0.0 /16
+│   Router IP: 10.0.0.1
+│
+│   Configuration
+│       NAT Enabled
+│       ICMP Response Allowed
+│       Web Management Enabled
+│       Static Routes Configured
+│
+│
+├── Distribution Router A – Office Workstations
+│   Device: TP-Link TL-R605
+│   Firmware: 1.2.0
+│   Gateway: 10.1.10.1
+│   Subnet: 10.1.10.0 /24
+│
+│   ├── Desktop – Accounting
+│   │   Device: Dell OptiPlex 5060
+│   │   OS: Windows 10 Pro
+│   │   IP: DHCP
+│   │
+│   ├── Desktop – HR
+│   │   Device: HP EliteDesk 800
+│   │   OS: Windows 10 Pro
+│   │   IP: DHCP
+│   │
+│   └── Desktop – Administration
+│       Device: Lenovo ThinkCentre M720
+│       OS: Windows 11
+│       IP: DHCP
+│
+│
+├── Distribution Router B – Application Servers
+│   Device: MikroTik hEX S
+│   Firmware: RouterOS 6.48
+│   Gateway: 10.1.20.1
+│   Subnet: 10.1.20.0 /24
+│
+│   ├── Application Server
+│   │   Device: Dell PowerEdge R320
+│   │   OS: Windows Server 2016
+│   │   IP: 10.1.20.10
+│   │
+│   ├── Database Server
+│   │   Device: Supermicro SYS-5018
+│   │   OS: Ubuntu Server 18.04
+│   │   IP: 10.1.20.11
+│   │
+│   ├── File Server
+│   │   Device: HP ProLiant ML110
+│   │   OS: Windows Server 2019
+│   │   IP: 10.1.20.12
+│   │
+│   └── Backup Server
+│       Device: QNAP TS-451+
+│       Firmware: QTS 4.4
+│       IP: 10.1.20.13
+│
+│
+├── Distribution Router C – Shared Devices
+│   Device: Netgear Nighthawk R7000 (router mode)
+│   Firmware: Stock firmware
+│   Gateway: 10.1.30.1
+│   Subnet: 10.1.30.0 /24
+│
+│   ├── Network Printer
+│   │   Device: HP LaserJet MFP M428
+│   │   IP: 10.1.30.10
+│   │
+│   ├── Label Printer
+│   │   Device: Zebra ZD420
+│   │   IP: 10.1.30.11
+│   │
+│   └── Document Scanner
+│       Device: Fujitsu ScanSnap iX1500
+│       IP: 10.1.30.12
+│
+│
+├── Distribution Router D – Security Systems
+│   Device: Ubiquiti EdgeRouter X
+│   Firmware: EdgeOS 2.0
+│   Gateway: 10.1.40.1
+│   Subnet: 10.1.40.0 /24
+│
+│   ├── Camera Controller
+│   │   Device: Dahua NVR4208
+│   │   IP: 10.1.40.10
+│   │
+│   ├── Security Camera
+│   │   Device: Dahua IP Camera
+│   │   IP: 10.1.40.11
+│   │
+│   ├── Security Camera
+│   │   Device: Dahua IP Camera
+│   │   IP: 10.1.40.12
+│   │
+│   └── Door Access Controller
+│       Device: HID VertX
+│       IP: 10.1.40.13
+│
+│
+├── Distribution Router E – Staff Laptops Docked
+│   Device: Cisco RV160
+│   Firmware: 1.0.01
+│   Gateway: 10.1.50.1
+│   Subnet: 10.1.50.0 /24
+│
+│   ├── Laptop Dock – Manager
+│   │   Device: Dell Latitude 5520
+│   │   OS: Windows 11
+│   │   IP: DHCP
+│   │
+│   ├── Laptop Dock – Sales
+│   │   Device: Lenovo ThinkPad T14
+│   │   OS: Windows 11
+│   │   IP: DHCP
+│   │
+│   └── Laptop Dock – Technician
+│       Device: HP ProBook 445
+│       OS: Windows 10
+│       IP: DHCP
+│
+│
+└── Distribution Router F – Infrastructure Services
+    Device: pfSense Appliance
+    Firmware: pfSense 2.6
+    Gateway: 10.1.60.1
+    Subnet: 10.1.60.0 /24
+
+    ├── Monitoring Server
+    │   Device: Dell PowerEdge R230
+    │   OS: Ubuntu Server 20.04
+    │   IP: 10.1.60.10
+    │
+    ├── Logging Server
+    │   Device: Intel NUC
+    │   OS: Debian 11
+    │   IP: 10.1.60.11
+    │
+    └── Time Server
+        Device: Raspberry Pi 4
+        OS: Raspberry Pi OS
+        IP: 10.1.60.12
