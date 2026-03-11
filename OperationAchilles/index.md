@@ -5,6 +5,19 @@ title: Operation Achilles
 
 # Operation Achilles
 
+<div style="text-align: center;">
+  <img src="{{ 'OperationAchilles/site/achilles.png' | relative_url }}" alt="Achilles" style="max-width: 80%; height: auto;">    
+  <p>Achillion Palace in Corfu, Greece</p>
+</div>
+
+<div class="scroll-box">
+In Greek myth, Achilles was the greatest warrior of the Greek force at Troy,
+but even he had a vulnerable point: his heel. That idea gives us the theme
+for this operation. A network may look strong overall and still have one weak
+point that matters more than everything else. In this mission, students act
+either as defenders trying to protect the most important part of the network
+or as attackers trying to identify and exploit that weak point.
+</div>
 <div class="terminal">
 student162@admin162:~/missions/operation_achilles$ cat overview.txt
 
@@ -33,29 +46,39 @@ the attackers planned to target and determine whether the attack would
 likely have succeeded.
 </div>
 
-<div class="scroll-box">
-In Greek myth, Achilles was the greatest warrior of the Greek force at Troy,
-but even he had a vulnerable point: his heel. That idea gives us the theme
-for this operation. A network may look strong overall and still have one weak
-point that matters more than everything else. In this mission, students act
-either as defenders trying to protect the most important part of the network
-or as attackers trying to identify and exploit that weak point.
-</div>
-
-# Troy
+# Troy - The Battlefields
 
 <div class="terminal">
 student162@admin162:~/missions/operation_achilles/networks$ ls
 
-basic_star.drawio
-basic_star_infrastructure.txt
-full_mesh.drawio
-full_mesh_infrastructure.txt
-partial_mesh.drawio
-partial_mesh_infrastructure.txt
-tree.drawio
-tree_infrastructure.txt
-</div>
+To get the resources for this exercise, download them from:
+
+SpyVsSpy/OperationAchilles/networks/
+
+Open a terminal and run the following commands.
+
+To get the resources for the basic star:
+
+wget https://raw.githubusercontent.com/jboyce1/SpyVsSpy/main/OperationAchilles/networks/basic_star.drawio
+wget https://raw.githubusercontent.com/jboyce1/SpyVsSpy/main/OperationAchilles/networks/basic_star_infrastructure.txt
+
+
+To get the resources for the full mesh:
+
+wget https://raw.githubusercontent.com/jboyce1/SpyVsSpy/main/OperationAchilles/networks/full_mesh.drawio
+wget https://raw.githubusercontent.com/jboyce1/SpyVsSpy/main/OperationAchilles/networks/full_mesh_infrastructure.txt
+
+
+To get the resources for the partial mesh:
+
+wget https://raw.githubusercontent.com/jboyce1/SpyVsSpy/main/OperationAchilles/networks/partial_mesh.drawio
+wget https://raw.githubusercontent.com/jboyce1/SpyVsSpy/main/OperationAchilles/networks/partial_mesh_infrastructure.txt
+
+
+To get the resources for the tree:
+
+wget https://raw.githubusercontent.com/jboyce1/SpyVsSpy/main/OperationAchilles/networks/tree.drawio
+wget https://raw.githubusercontent.com/jboyce1/SpyVsSpy/main/OperationAchilles/networks/tree_infrastructure.txt
 
 <div class="scroll-box">
 This lesson introduces common network topologies and asks you to think about
@@ -104,7 +127,6 @@ FIRMWARE VULNERABILITIES:
 - unpatched switch management interfaces
 - insecure remote administration
 - known CVEs not remediated
-- unsupported hardware with no patch path
 
 BOTTOM LINE:
 The network diagram is not just a picture.
@@ -119,22 +141,21 @@ It is a map of trust, dependence, and opportunity.
 student162@blue-team:~/missions/operation_achilles$ cat defend.txt
 
 ROLE:
-You are a newly hired sysadmin defending the network of Troy.
+You are a newly hired sysadmin defending a network of Troy besieged by the Achaeans.
 
 MISSION:
 Identify the most critical vulnerability or high-value target in the network.
 Recommend what must be defended first.
-Convince the CEO / Superintendent that your recommendation is specific,
+Convince the CEO / Superintendent that your recommendationds are specific,
 important, and supported by evidence.
 
 EXPECTED OUTPUT:
 A short executive briefing with:
-- the network map
-- the most critical vulnerability or target
-- why it matters
-- what the attacker would gain
-- what damage could follow
-- what defenses should be implemented first
+- the network map enumerated with relevant details
+- the most critical vulnerabilities or targets called out
+- what actions should be taken and why it matters
+  minimum of 2 'fixes' and max of 6 'fixes' proposed
+- what damage or problems not fixing the issues would cause
 - evidence from the topology, device role, trust relationships, or known
   weaknesses in hardware / firmware / credentials
 
@@ -142,6 +163,7 @@ RULE:
 Only vulnerabilities that are well described will be approved for action.
 If you cannot explain it clearly, you are not ready to defend it.
 </div>
+
 
 <div class="scroll-box">
 Blue team members should think like sysadmins, not just like people naming
@@ -156,7 +178,7 @@ Your presentation should answer:
 4. What business, school, or mission impact would follow?
 5. What concrete defensive action should be taken?
 
-Acceptable evidence may include:
+Acceptable evidence may include (not limited to):
 - centrality in the network map
 - control over authentication or routing
 - access to sensitive data
@@ -164,6 +186,9 @@ Acceptable evidence may include:
 - likely role in confidentiality or integrity loss
 - outdated or vulnerable hardware / firmware
 </div>
+
+### Download the template:
+[OperationAchilles-Defend.odp](https://github.com/user-attachments/files/25900462/OperationAchilles-Defend.odp)
 
 # Cyber Kill Chain
 
