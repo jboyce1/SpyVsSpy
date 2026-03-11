@@ -18,7 +18,7 @@ nav {
     top: 0;
     width: 210px;
     height: 100vh;
-    background-color: rgb(94, 14, 26);
+    background-color: rgb(72, 18, 28); 
     padding: 20px 10px;
     overflow-y: auto;
     border-left: 4px solid rgb(112, 96, 21);
@@ -147,7 +147,7 @@ a:hover {
 
 /* Scroll box */
 .scroll-box {
-    background-color: rgb(58, 50, 33);
+    background-color: rgb(72, 18, 28);
     color: rgb(227, 222, 205);
     padding: 12px;
     margin: 12px 0;
