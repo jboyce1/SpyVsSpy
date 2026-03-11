@@ -188,12 +188,12 @@ Acceptable evidence may include (not limited to):
 - outdated or vulnerable hardware / firmware
 </div>
 
-### Download the template:
-[OperationAchilles-Defend.odp](https://github.com/user-attachments/files/25900462/OperationAchilles-Defend.odp)
+### Template:
+[Operation Achilles Defend Template](https://raw.githubusercontent.com/jboyce1/SpyVsSpy/main/OperationAchilles/OperationAchilles-Defend.odp)
 
-# Become
-# Cyber Kill Chain
-
+# This is Sparta (Attack Frameworks)
+## Cyber Kill Chain
+### "Come back with your shield, or on it."
 <div class="terminal">
 student162@admin162:~/frameworks$ cat cyber_kill_chain.txt
 
@@ -219,7 +219,8 @@ student162@admin162:~/frameworks$ cat cyber_kill_chain.txt
    The attacker achieves the goal: theft, disruption, surveillance, or damage.
 </div>
 
-# MITRE
+## MITRE
+### "He who sweats more in training bleeds less in war."
 
 <div class="terminal">
 student162@admin162:~/frameworks$ cat mitre_tactics.txt
@@ -286,20 +287,19 @@ Identify the most promising target and explain how you would attack it.
 
 EXPECTED OUTPUT:
 A short approval briefing to your boss with:
-- the target you intend to attack
+- the target(s) you intend to attack
+  min target 1 max targets 4
 - why that target is vulnerable or high value
-- what you expect to gain
-- what attack path you would attempt
+- what attack path you will attempt
 - what effect you hope to achieve
-- which Cyber Kill Chain step(s) matter most
+- which Cyber Kill Chain step(s) you'll use
 - which MITRE tactic(s) best match your plan
 - evidence from the network map, device role, trust relationships, or weak
   hardware / firmware / credentials
 
 RULE:
 Only breaches that are specific will be approved.
-If your plan depends on vague language like "hack the network" or
-"break into the server somehow," it is not approved.
+This you're walking into enemy territory and known breech will weaken other efforts
 </div>
 
 <div class="scroll-box">
@@ -321,6 +321,10 @@ Strong attack plans may focus on:
 - a system whose compromise enables lateral movement
 - a target whose failure damages confidentiality, integrity, or availability
 </div>
+
+Template:
+[Operation Achilles Attack Template](https://raw.githubusercontent.com/jboyce1/SpyVsSpy/main/OperationAchilles/OperationAchilles-Attack.odp)
+
 
 # Review questions
 
