@@ -79,6 +79,7 @@ To get the resources for the tree:
 
 wget https://raw.githubusercontent.com/jboyce1/SpyVsSpy/main/OperationAchilles/networks/tree.drawio
 wget https://raw.githubusercontent.com/jboyce1/SpyVsSpy/main/OperationAchilles/networks/tree_infrastructure.txt
+</div>
 
 <div class="scroll-box">
 This lesson introduces common network topologies and asks you to think about
@@ -190,6 +191,7 @@ Acceptable evidence may include (not limited to):
 ### Download the template:
 [OperationAchilles-Defend.odp](https://github.com/user-attachments/files/25900462/OperationAchilles-Defend.odp)
 
+# Become
 # Cyber Kill Chain
 
 <div class="terminal">
@@ -264,6 +266,8 @@ Removing data from the target environment.
 Impact
 Disrupting, destroying, changing, or denying access to systems or data.
 </div>
+
+### "We've forgotten the first half of your speech and didn't understand the second."
 
 # King Menelaus of Sparta (red mission)
 
