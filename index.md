@@ -11,8 +11,7 @@ This site serves as the public-facing hub for operations, training material, and
 
 ## Classes
 
-- [CyberTactics and Football](./CyberTacticsAndFootball)
-- [CyberTactics and Chess](./CyberTacticsAndChess)
+
 - [Operation Silk Road](./OperationSilkRoadI)
 - [Operation Silk Road II](./OperationSilkRoadII)
 - [Operation Achilles](./OperationAchilles)
@@ -22,14 +21,21 @@ This site serves as the public-facing hub for operations, training material, and
 - [apt-get TO DA CHOPPA](./AptGetToDaChoppa)
 
 ## Resources
-
+### Explainers
+- [CyberTactics and Football](https://jboyce1.github.io/ppsCTF/football/offense/)
+- [CyberTactics and Chess I](https://jboyce1.github.io/ppsCTF/chess/pieces/)
+- [CyberTactics and Chess II](https://jboyce1.github.io/ppsCTF/chess/attacks/)
+- [MITRE ATT&CK](https://attack.mitre.org/) 
+- [Lockheed Martin Cyber Kill Chain](https://www.lockheedmartin.com/en-us/capabilities/cyber/cyber-kill-chain.html)
+### Tools
 - [CyberChef](https://gchq.github.io/CyberChef/)
+### Platforms
+- [picoCTF Resources](https://picoctf.org/resources.html)
 - [TryHackMe Classrooms](https://tryhackme.com/classrooms)
 - [SANS Cyber Aces](https://www.sans.org/cyberaces/)
 - [PortSwigger Web Security](https://portswigger.net/web-security)
-- [picoCTF Resources](https://picoctf.org/resources.html)
-- [MITRE ATT&CK](https://attack.mitre.org/) 
-- [Lockheed Martin Cyber Kill Chain](https://www.lockheedmartin.com/en-us/capabilities/cyber/cyber-kill-chain.html)
+
+
 
 ## About
 
