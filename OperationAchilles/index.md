@@ -48,39 +48,6 @@ likely have succeeded.
 
 # Troy - The Battlefields
 
-<div class="terminal">
-student162@admin162:~/missions/operation_achilles/networks$ ls
-
-To get the resources for this exercise, download them from:
-
-SpyVsSpy/OperationAchilles/networks/
-
-Open a terminal and run the following commands.
-
-To get the resources for the basic star:
-
-wget https://raw.githubusercontent.com/jboyce1/SpyVsSpy/main/OperationAchilles/networks/basic_star.drawio
-wget https://raw.githubusercontent.com/jboyce1/SpyVsSpy/main/OperationAchilles/networks/basic_star_infrastructure.txt
-
-
-To get the resources for the full mesh:
-
-wget https://raw.githubusercontent.com/jboyce1/SpyVsSpy/main/OperationAchilles/networks/full_mesh.drawio
-wget https://raw.githubusercontent.com/jboyce1/SpyVsSpy/main/OperationAchilles/networks/full_mesh_infrastructure.txt
-
-
-To get the resources for the partial mesh:
-
-wget https://raw.githubusercontent.com/jboyce1/SpyVsSpy/main/OperationAchilles/networks/partial_mesh.drawio
-wget https://raw.githubusercontent.com/jboyce1/SpyVsSpy/main/OperationAchilles/networks/partial_mesh_infrastructure.txt
-
-
-To get the resources for the tree:
-
-wget https://raw.githubusercontent.com/jboyce1/SpyVsSpy/main/OperationAchilles/networks/tree.drawio
-wget https://raw.githubusercontent.com/jboyce1/SpyVsSpy/main/OperationAchilles/networks/tree_infrastructure.txt
-</div>
-
 <div class="scroll-box">
 This lesson introduces common network topologies and asks you to think about
 how structure affects security.
@@ -97,6 +64,31 @@ As you study each network, pay attention to:
 - where credentials may be stored or transmitted
 - where a single failure could disrupt the network
 - where segmentation appears weak or absent
+</div>
+<div class="terminal">
+student162@admin162:~/missions/operation_achilles/networks$ ls
+
+To get the resources for this exercise, download them from:
+
+SpyVsSpy/OperationAchilles/networks/
+
+Open a terminal in your folder and run the following commands.
+
+To get the resources for the basic star:
+wget https://raw.githubusercontent.com/jboyce1/SpyVsSpy/main/OperationAchilles/networks/basic_star.drawio
+wget https://raw.githubusercontent.com/jboyce1/SpyVsSpy/main/OperationAchilles/networks/basic_star_infrastructure.txt
+
+To get the resources for the full mesh:
+wget https://raw.githubusercontent.com/jboyce1/SpyVsSpy/main/OperationAchilles/networks/full_mesh.drawio
+wget https://raw.githubusercontent.com/jboyce1/SpyVsSpy/main/OperationAchilles/networks/full_mesh_infrastructure.txt
+
+To get the resources for the partial mesh:
+wget https://raw.githubusercontent.com/jboyce1/SpyVsSpy/main/OperationAchilles/networks/partial_mesh.drawio
+wget https://raw.githubusercontent.com/jboyce1/SpyVsSpy/main/OperationAchilles/networks/partial_mesh_infrastructure.txt
+
+To get the resources for the tree:
+wget https://raw.githubusercontent.com/jboyce1/SpyVsSpy/main/OperationAchilles/networks/tree.drawio
+wget https://raw.githubusercontent.com/jboyce1/SpyVsSpy/main/OperationAchilles/networks/tree_infrastructure.txt
 </div>
 
 <div class="terminal">
@@ -193,6 +185,18 @@ Acceptable evidence may include (not limited to):
 
 ### Template:
 [Operation Achilles Defend Template](https://raw.githubusercontent.com/jboyce1/SpyVsSpy/main/OperationAchilles/OperationAchilles-Defend.odp)
+
+Set up a simple one way team share:
+<div class="terminal">
+student162@admin162:~/networking$ cat simple_team_share.txt
+mkdir ~/teamshare
+cd teamshare
+python3 -m http.server 8080
+</div>
+
+You can call your teamshare something more unique and put it on a different port.
+Access the server
+http://<host_ip>:8080
 
 # This is Sparta (attack frameworks)
 ## Cyber Kill Chain
