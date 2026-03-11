@@ -165,6 +165,9 @@ Only vulnerabilities that are well described will be approved for action.
 If you cannot explain it clearly, you are not ready to defend it.
 </div>
 
+<div style="text-align: right;">
+  <img src="{{ 'OperationAchilles/site/achilles-need-sword.gif' | relative_url }}" alt="Achilles" style="max-width: 80%; height: auto;">    
+</div> 
 
 <div class="scroll-box">
 Blue team members should think like sysadmins, not just like people naming
@@ -191,7 +194,7 @@ Acceptable evidence may include (not limited to):
 ### Template:
 [Operation Achilles Defend Template](https://raw.githubusercontent.com/jboyce1/SpyVsSpy/main/OperationAchilles/OperationAchilles-Defend.odp)
 
-# This is Sparta (Attack Frameworks)
+# This is Sparta (attack frameworks)
 ## Cyber Kill Chain
 ### "Come back with your shield, or on it."
 <div class="terminal">
@@ -302,6 +305,10 @@ Only breaches that are specific will be approved.
 This you're walking into enemy territory and known breech will weaken other efforts
 </div>
 
+<div style="text-align: right;">
+  <img src="{{ 'OperationAchilles/site/achilles-spear-throw.gif' | relative_url }}" alt="Achilles" style="max-width: 80%; height: auto;">    
+</div> 
+
 <div class="scroll-box">
 Red team members must move beyond "what looks vulnerable" and explain
 "how the attack would actually work."
@@ -358,6 +365,9 @@ student162@admin162:~/missions/operation_achilles$ cat review_questions.txt
     in the network first if you were actually responsible for it?
 </div>
 
+<div style="text-align: right;">
+  <img src="{{ 'OperationAchilles/site/achilles_dodge.gif' | relative_url }}" alt="Achilles" style="max-width: 80%; height: auto;">    
+</div> 
 # Standards
 
 <div class="terminal">
